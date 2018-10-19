@@ -7,7 +7,7 @@ const config = require("./config.json")
 
 const devs = ["462503125048360960"]
 
-const adminprefix = "+";
+const adminprefix = "#";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
